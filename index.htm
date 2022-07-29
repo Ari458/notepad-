@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-night.css">
+    <title>Notepad</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li>S</li>
+                <li>O</li>
+                <li>C</li>
+                <li>P</li>
+                <li>Zi</li>
+                <li>Zo</li>
+                <li>font</li>
+                <li>
+                    <select class="decorated" name="" id="colors">
+                        <option class="red" value="#ff0000" >Red</option>
+                        <option class="green" value="#33cc33" >Green</option>
+                        <option class="blue" value="#0066ff" >Blue</option>
+                    </select>
+                </li>
+                <li class="margin">
+                    <input type="radio" id="white_page" name="page-type" value="w" onclick="pageType()">
+                    <label for="white_page">Normal</label>
+                    <br>
+                    <input type="radio" id="rule_page" name="page-type" value="r" checked onclick="pageType()">
+                    <label for="white_page">Rule</label>
+                </li>
+                <li class="lamp">
+                    <img src="images/on.png" alt="light" class="light-img">
+                    <div class="mid">
+                        <label class="rocker">
+                          <input type="checkbox" id="light" checked onclick="lightToggle()">
+                          <span class="switch-left">On</span>
+                          <span class="switch-right">Off</span>
+                        </label>
+                      </div>
+                </li>
+                <li>date</li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <textarea class="write" autofocus></textarea>
+        </div>
+
+        <div class="info">
+           
+        </div>
+
+
+        <footer class="foot">
+                No &copy;opyright•2021 @Ari
+        </footer>
+    </div>
+
+
+
+
+    <script src="program.js"></script>
+</body>
+
+</html>
